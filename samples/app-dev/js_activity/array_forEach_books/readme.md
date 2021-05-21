@@ -3,7 +3,7 @@
 ## Description
 
 This sample demonstate an example of JavaScript array.forEach() function using flogo 'Execute JavaScript' activity.
-The flow invokes a rest service and returns an array of book objects. The 'Execute JavaScript' activity then returns the book details for those books which have signed attribute set as true using array.forEach() function.
+The flow invokes a rest service that returns an array of book objects. The 'Execute JavaScript' activity then returns the book details for those books which have signed attribute set as true using array.forEach() function.
 
 ## Prerequisites
 
@@ -31,7 +31,7 @@ The flow invokes a rest service and returns an array of book objects. The 'Execu
 
 ## Understanding the configuration
 
-The flow invokes a rest service and returns an array of book objects. The ExecuteJavaSript activity takes this array in input parameters and iterate over it using forEach() function. It pushes the book objects to a new array which satisfy the 'signed = true' condition then retruns the new array using result output parameter.
+The flow invokes a rest service that returns an array of book objects. The ExecuteJavaSript activity takes this array in input parameters and iterate over it using forEach() function. It pushes the book objects to a new array which satisfy the 'signed = true' condition then retruns the new array using result output parameter.
 
 ![ExecuteJavaScript Flow](../../import-screenshots/js-activity/the_flow_books.png)
 
