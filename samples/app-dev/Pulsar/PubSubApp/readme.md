@@ -18,16 +18,16 @@ The sample application has two flows - first is 'Pulsar-producer' which publishe
 1. Download the sample's .json file 'Flogo_pulsar_sample.json'
 
 2. Create a new empty app.
-![Create an app](../../../import-screenshots/2.png)
+![Create an app](../../import-screenshots/2.png)
 
 3. On the app details page, select Import app.
-![Select import](../../../import-screenshots/3.png)
+![Select import](../../import-screenshots/3.png)
 
 4. Browse on your machine or drag and drop the .json file for the app that you want to import.
-![Import your sample](../../../import-screenshots/pulsar/ImportApp.png)
+![Import your sample](../../import-screenshots/pulsar/ImportApp.png)
 
 5. Click Upload. The Import app dialog displays some general warnings and specific error in you app if any.
-![The Import app dialog](../../../import-screenshots/pulsar/ImportDialog.png)
+![The Import app dialog](../../import-screenshots/pulsar/ImportDialog.png)
 
 6. You have the option to import all flows from the source app or selectively import flows.
 
@@ -40,7 +40,7 @@ The sample application has two flows - first is 'Pulsar-producer' which publishe
 ### The Connection
 When you import this app, you need to re-configure the 'flogo_pulsar_TLS' connection in Connections page. 
 
-![The pulsar connection](../../../import-screenshots/pulsar/pulsar_connection.png)
+![The pulsar connection](../../import-screenshots/pulsar/pulsar_connection.png)
 
 In the sample connection,
 * It uses a pulsar broker running TLS mode. You can set the authorization type according to your broker flavour. If its running in plain mode, simply choose 'None' in 'auth type' dropdown.
@@ -51,7 +51,7 @@ For more information on connection fields, please refer to https://integration.c
 
 ### The Producer and Consumer Flows
 The application contains two flows; a Pulsar-producer and a Pulsar-consumer flow
-![The Flows](../../../import-screenshots/pulsar/Pulsar_flows.png)
+![The Flows](../../import-screenshots/pulsar/Pulsar_flows.png)
 
 To publish the mesages to a topic, it accepts the number of messages that you want to send from the HTTP trigger along with your message. Then PulsarPublisher activity iterate using the Loop settings and sends given number of messages to a topic defined in its 'Settings'.
 Settings tab has the specified connection and the topic name with optional compression type.  
@@ -62,22 +62,22 @@ To receive the messages, it has a consumer trigger flow which subscribes to the 
 For information on trigger settings please refer to https://integration.cloud.tibco.com/docs/index.html#Subsystems/flogo-pulsar/connector-users-guide/pulsar-consumer-trigger.html
 When there is a new message, the consumer triggers get extecuted and it prints the Message payload, properties and the topic name using a log activity.
 
-![The Pulsar Trigger](../../../import-screenshots/pulsar/Pulsar_Trigger_settings.png)
+![The Pulsar Trigger](../../import-screenshots/pulsar/Pulsar_Trigger_settings.png)
 
 ### Run the application
 Once you are ready to run the application, you can use the Push option and later run this app.
 Once it reaches to Running state, go to Endpoints, click on Test under Actions and select 'Try it out' for POST/publish
 Now enter the number of messages you want to send and a value of 'you_message' in the post body.
 Now click Execute button.
-![Runtime Execution](../../../import-screenshots/pulsar/Pulsar_endpoint_inputs.png)
+![Runtime Execution](../../import-screenshots/pulsar/Pulsar_endpoint_inputs.png)
 
 ## Outputs
 
 1. Response when hit the endpoints
-![Sample Response](../../../import-screenshots/pulsar/Pulsar_endpoint_output.png)
+![Sample Response](../../import-screenshots/pulsar/Pulsar_endpoint_output.png)
 
 2. Receieve Message Logs
-![Sample Logs](../../../import-screenshots/pulsar/Pulsar_receiveMessages_logs.png)
+![Sample Logs](../../import-screenshots/pulsar/Pulsar_receiveMessages_logs.png)
 
 
 

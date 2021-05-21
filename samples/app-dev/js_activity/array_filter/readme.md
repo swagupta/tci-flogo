@@ -52,7 +52,7 @@ To run the second flow in tester, use the input schema from 'input_schema_arrayF
 ![Flow Tester](../../import-screenshots/js-activity/flow_tester.png)
 
 2. Application Logs
-![Application Logs](../../import-screenshots/js-activty/logs.png)
+![Application Logs](../../import-screenshots/js-activity/logs.png)
 
 
 ## Contributing
