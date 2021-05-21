@@ -32,6 +32,7 @@ The flow invokes a rest service that returns an array of book objects. The 'Exec
 ## Understanding the configuration
 
 The flow invokes a rest service that returns an array of book objects. The ExecuteJavaSript activity takes this array in input parameters and iterate over it using forEach() function. It pushes the book objects to a new array which satisfy the 'signed = true' condition then retruns the new array using result output parameter.
+Note that, you must declare result and parameters variables to access input and output parameters in js code.
 
 ![ExecuteJavaScript Flow](../../import-screenshots/js-activity/the_flow_books.png)
 

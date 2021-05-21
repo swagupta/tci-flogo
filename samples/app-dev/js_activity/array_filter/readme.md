@@ -38,6 +38,8 @@ In second condition 'arr2.indexOf(e) === -1', if index value is -1 that means th
 
 2. The second flow 'arrayofObjects_filter_map' does the same thing with different logic and inputs. It takes two array of objects coming from timer trigger in the input settings of js activity and stores the ids from the input array2 in a new array 'arrayofIds' using map() function. Then filters the first array with ids in 'arrayofIds' array. Based on the condition 'e.id === arrayofIds[i]' to be true or false, it stores the result in new arrays then print in logs.
 
+Note that, you must declare result and parameters variables to access input and output parameters in js code.
+
 ### Run the application
 Once you are ready to run the application, you can use Push option and later run this app.
 Once it reaches to Running state, go to Logs tab and check the results. It prints filerted arrays in log activities.
