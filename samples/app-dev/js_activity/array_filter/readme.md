@@ -1,4 +1,4 @@
-# JavaScript activity Sample- array.filter(),array.indexOf() and array.map()
+# JavaScript activity Sample- array.filter(), array.indexOf() and array.map()
 
 
 ## Description
@@ -52,7 +52,7 @@ To run the second flow in tester, use the input schema from 'input_schema_arrayF
 ![Flow Tester](../../import-screenshots/js-activity/flow_tester.png)
 
 2. Application Logs
-![Application Logs](../../import-screenshots/rest-auth/logs.png)
+![Application Logs](../../import-screenshots/js-activty/logs.png)
 
 
 ## Contributing

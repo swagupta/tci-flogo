@@ -23,7 +23,7 @@ The sample invokes a service and receievs an array of books then returns the boo
 ![Import your sample](../../import-screenshots/js-activity/import_json_books.png)
 
 5. Click Upload. The Import app dialog displays some generic errors and warnings as well as any specific errors or warnings pertaining to the app you are importing. It validates whether all the activities and triggers used in the app are available in the Extensions tab.
-![The Import app dialog](../../import-screenshots/js-activity/import_dialog.png)
+![The Import app dialog](../../import-screenshots/js-activity/import_dialog_books.png)
 
 6. You have the option to import all flows from the source app or selectively import flows.
 
@@ -33,13 +33,15 @@ The sample invokes a service and receievs an array of books then returns the boo
 
 The flow invokes a rest service and returns an array of book objects. The ExecuteJavaSript activity takes this array in input parameters and iterate over it using forEach() function. It pushes the book objects to a new array which satisfy the 'signed = true' condition then retruns the new array using result output parameter.
 
+![ExecuteJavaScript Flow](../../import-screenshots/js-activity/the_flow_books.png)
+
 ### Run the application
 Once you are ready to run the application, you can use Push option and later run this app.
 Once it reaches to Running state, go to Logs tab and check the results. It prints the signed books objects in the log activities.
 
 If you want to test the sample in the Flow tester, hit 'Test' button on top right corner and create a new launch configuration. It does not require any flow inputs.
 
-![ExecuteJavaScript Flow Input and Output](../../import-screenshots/js-activity/flow_tester_io.png)
+![ExecuteJavaScript Flow Input and Output](../../import-screenshots/js-activity/flow_tester_js_io.png)
 
 ## Outputs
 
