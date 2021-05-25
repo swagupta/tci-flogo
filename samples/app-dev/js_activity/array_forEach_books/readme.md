@@ -34,6 +34,8 @@ The flow invokes a rest service that returns an array of book objects. The 'Exec
 The flow invokes a rest service that returns an array of book objects. The ExecuteJavaSript activity takes this array in input parameters and iterate over it using forEach() function. It pushes the book objects to a new array which satisfy the 'signed = true' condition then retruns the new array using result output parameter.
 Note that, you must declare result and parameters variables to access input and output parameters in js code.
 
+![ExecuteJavaScript Flow Input](../../import-screenshots/js-activity/books_inputSchema.png)
+![ExecuteJavaScript Flow Input](../../import-screenshots/js-activity/books_inputMapping.png)
 ![ExecuteJavaScript Flow](../../import-screenshots/js-activity/the_flow_books.png)
 
 ### Run the application
@@ -41,7 +43,8 @@ Once you are ready to run the application, you can use Push option and later run
 Once it reaches to Running state, go to Logs tab and check the results. It prints the signed books objects in the log activities.
 
 If you want to test the sample in the Flow tester, hit 'Test' button on top right corner and create a new launch configuration. It does not require any flow inputs.
-
+![Launch Configuration](../../import-screenshots/js-activity/tester_launch.png)
+![Launch Configuration](../../import-screenshots/js-activity/books_launch_config.png)
 ![ExecuteJavaScript Flow Input and Output](../../import-screenshots/js-activity/flow_tester_js_io.png)
 
 ## Outputs

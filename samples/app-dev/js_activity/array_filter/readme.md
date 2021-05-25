@@ -33,10 +33,21 @@ The sample app takes two arrays in input parameters and filters first array base
 ## Understanding the configuration
 
 1. The first flow 'array_filter_indexOf' takes two integer arrays from the input parameters and use array.filter() function to filter the first array.
+![Input Array1](../../import-screenshots/js-activity/arrayFilter_indexof_inputPar_1.png)
+![Input Array2](../../import-screenshots/js-activity/arrayFilter_indexof_inputPar_2.png)
+
 The First condition 'arr2.indexOf(e) > -1' expects index value of iterating elements in array2 to be greater than -1 that shows the element is present in array2 and the matching element is returned to a new array3.
 In second condition 'arr2.indexOf(e) === -1', if index value is -1 that means the element is not present in array2 then retrun non matching element in new array4.
+![JS Logic](../../import-screenshots/js-activity/arrayFilter_indexof_1.png)
+![Output Schema](../../import-screenshots/js-activity/arrayFilter_indexof_outputSchema.png)
+![Output](../../import-screenshots/js-activity/arrayFilter_indexof_output.png)
+
 
 2. The second flow 'arrayofObjects_filter_map' does the same thing with different logic and inputs. It takes two array of objects coming from timer trigger in the input settings of js activity and stores the ids from the input array2 in a new array 'arrayofIds' using map() function. Then filters the first array with ids in 'arrayofIds' array. Based on the condition 'e.id === arrayofIds[i]' to be true or false, it stores the result in new arrays then print in logs.
+![Input Array1](../../import-screenshots/js-activity/arrayFilter_map_input.png)
+![Input Array2](../../import-screenshots/js-activity/arrayFilter_map_input_1.png)
+![Input Parameter](../../import-screenshots/js-activity/arrayFilter_map_inputPar_1.png)
+![JS Logic](../../import-screenshots/js-activity/arrayFilter_map_1.png)
 
 Note that, you must declare result and parameters variables to access input and output parameters in js code.
 
@@ -46,7 +57,10 @@ Once it reaches to Running state, go to Logs tab and check the results. It print
 
 If you want to test the sample in the Flow tester, hit 'Test' button on top right corner and create a new launch configuration. First flow does not require any flow inputs.
 To run the second flow in tester, use the input schema from 'input_schema_arrayFilter' text file in the launch configuration.
+![Launch Configuration](../../import-screenshots/js-activity/tester_launch.png)
 ![Launch Configuration](../../import-screenshots/js-activity/launch_config.png)
+![Launch Configuration Input Settings](../../import-screenshots/js-activity/arrayFilter_map_flowTester_inputSettngs.png)
+
 
 ## Outputs
 

@@ -55,8 +55,13 @@ The application contains two flows; a Pulsar-producer and a Pulsar-consumer flow
 
 To publish the mesages to a topic, it accepts the number of messages that you want to send from the HTTP trigger along with your message. Then PulsarPublisher activity iterate using the Loop settings and sends given number of messages to a topic defined in its 'Settings'.
 Settings tab has the specified connection and the topic name with optional compression type.  
+![The HTTP Trigger](../../import-screenshots/pulsar/rest_trigger_qp.png)
+![The Publisher Settings](../../import-screenshots/pulsar/pulsar_pub_1.png)
 Here we are seinding the messages in JSON format which is set in the Input Settings along with a message property 'message_type'
+![The Publisher Input Settings](../../import-screenshots/pulsar/pulsar_pub_2.png)
 You can map the actual message and the message properties in the Input tab. It retruns the number of messages published with message ids.
+![The Publisher Input](../../import-screenshots/pulsar/pulsar_pub_3.png)
+
 
 To receive the messages, it has a consumer trigger flow which subscribes to the same topic using a subscription name to process the incoming messages. You can set the subscription type and processing mode according to your choice in the trigger setting.  
 For information on trigger settings please refer to https://integration.cloud.tibco.com/docs/index.html#Subsystems/flogo-pulsar/connector-users-guide/pulsar-consumer-trigger.html
