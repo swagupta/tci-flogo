@@ -67,6 +67,7 @@ To receive the messages, it has a consumer trigger flow which subscribes to the 
 For information on trigger settings please refer to https://integration.cloud.tibco.com/docs/index.html#Subsystems/flogo-pulsar/connector-users-guide/pulsar-consumer-trigger.html
 When there is a new message, the consumer triggers get extecuted and it prints the Message payload, properties and the topic name using a log activity.
 
+![The Pulsar Trigger](../../import-screenshots/pulsar/pulsar_consumer_flow.png)
 ![The Pulsar Trigger](../../import-screenshots/pulsar/Pulsar_Trigger_settings.png)
 
 ### Run the application
