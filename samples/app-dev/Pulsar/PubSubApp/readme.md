@@ -47,7 +47,8 @@ In the sample connection,
 * In TLS or JWT auth types, broker URL requires 'pulsar+ssl' in the beginning of the URL. In plain mode, only 'pulsar' is required.
 * Update the Broker URL and certificates in the connection if using TLS mode. Refer to Pulsar Security documentation to get the idea about auth types and creating certificates- https://pulsar.apache.org/docs/en/security-overview  
 For more information on connection fields, please refer to https://integration.cloud.tibco.com/docs/index.html#Subsystems/flogo-pulsar/connector-users-guide/pulsar-connection-details.html
-
+* Connecting to Pulsar hosted on Tibco Cloud Messaging - You can also connect to the pulsar TCM instance by configuring Pulsar Connection using tcm-config.yaml. In this case you need to use Autorization type as JWT and use the tcm_authentication_key as the JWT token. You can get the broker url and namespace from the same tcm-config.yaml.
+Please refer to - https://messaging.cloud.tibco.com/docs/getstarted/quickstart-pulsar/index.html
 
 ### The Producer and Consumer Flows
 The application contains two flows; a Pulsar-producer and a Pulsar-consumer flow
